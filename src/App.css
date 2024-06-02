@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #020101;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: white;
+  background-image: linear-gradient(to right, purple , red);
+  padding: 1rem;
+  text-align: right;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  color: #f4f4f4;
+}
+
+.navbar h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem; /* Adjust as needed */
+  color: rgb(220, 215, 215); /* Adjust color as needed */
+  margin: 0;
+}
+
+.cart {
+  background-color: #444;
+  padding: 0.25rem 0.5rem; /* Adjust padding to make it smaller */
+  border-radius: 4px;
+  font-size: 0.8rem; /* Adjust font size to make it smaller */
+}
+
+.cart-icon {
+  width: 35px; /* Adjust size as needed */
+  height: 35px; /* Adjust size as needed */
+  background-color: red; /* Example background color */
+  border-radius: 50%; /* Makes the shape circular */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white; /* Text color */
+  font-size: 15px; /* Adjust text size as needed */
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.movie-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 1rem;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h3 {
+  margin: 0.5rem 0;
+}
+
+.movie-card p {
+  margin: 0;
+  color: #555;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: auto; /* Pushes the button to the bottom */
+  width: 100%;
+}
+
+.button-wrapper h3, .button-wrapper p {
+  margin: 0.5rem 0;
+}
+
+.button-wrapper button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.button-wrapper button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movie-card button:hover {
+  background-color: #218838;
+}
+
+input[type="text"] {
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.cart {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.cart-item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cart-item p {
+  margin: 0;
+  color: #555;
+}
+
+.cart-item button {
+  margin-left: auto;
+  padding: 0.25rem 0.5rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #c82333;
 }
