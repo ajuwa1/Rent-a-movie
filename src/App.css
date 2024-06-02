@@ -11,7 +11,7 @@ body {
 .navbar {
   background-color: white;
   background-image: linear-gradient(to right, purple , red);
-  padding: 1rem;
+  padding: 3rem;
   text-align: right;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@ body {
 
 .navbar h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem; /* Adjust as needed */
+  font-size: 3rem; /* Adjust as needed */
   color: rgb(220, 215, 215); /* Adjust color as needed */
   margin: 0;
 }
